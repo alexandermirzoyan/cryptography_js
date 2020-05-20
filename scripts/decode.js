@@ -8,7 +8,7 @@ function decode() {
 
   let encryptedText = "";
   for (let i = 0; i < inputtedTextCharArray.length; i++) {
-    // looping through alphabet object and check if some objects key is equal to our inputted character
+    // looping through alphabet object and check if some objects value is equal to our inputted character
     for (let [key, value] of Object.entries(alphabet)) {
       if (inputtedTextCharArray[i] === value) {
         encryptedText += key;
